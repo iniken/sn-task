@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
-import {Raiting} from "./components/Raiting/Raiting";
+import Rating from './components/Rating/Rating';
+
 
 function App() {
     return (
@@ -9,22 +10,26 @@ function App() {
             <PageTitle title={"Hello"}/>
             <PageTitle title={"Yo"}/>
             Article 1
-            <Raiting value={3}/>
-            <Accordion title={"Main Cool MENU"}/>
-            <Accordion title={"Luxary MENU"}/>
+            <Rating value={3}/>
+            <Accordion titleValue={"Main Cool MENU"}/>
+            <Accordion titleValue={"Luxary MENU"}/>
 
             Article 2
-            <Raiting value={0}/>
-            <Raiting value={1}/>
-            <Raiting value={2}/>
-            <Raiting value={3}/>
-            <Raiting value={4}/>
-            <Raiting value={5}/>
+            <Rating value={0}/>
+            <Rating value={1}/>
+            <Rating value={2}/>
+            <Rating value={3}/>
+            <Rating value={4}/>
+            <Rating value={5}/>
         </div>
     );
 }
 
-function PageTitle(props: any) {
+type PageTitlePropsType={
+    title: string;
+}
+
+function PageTitle(props: PageTitlePropsType) {
     debugger;
     return (
         <h1>{props.title}</h1>
