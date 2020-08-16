@@ -5,11 +5,20 @@ function App() {
     debugger;
     return (
         <div>
-            This is App component
-            <Raiting/>
-            <Accordion/>
+
+            <AppTitle />
+            <Raiting />
+            <Accordion />
+            <Raiting />
         </div>
     );
+}
+
+function AppTitle() {
+    debugger;
+    return (
+    <>This is App component</>
+    )
 }
 
 function Raiting() {
@@ -36,13 +45,29 @@ function Accordion() {
     debugger;
     return (
         <div>
+            <AccordionTitle/>
+            <AccordionBody/>
+        </div>
+    );
+}
+
+
+function AccordionTitle() {
+    debugger;
+    return (
             <h3>Меню</h3>
+    );
+}
+
+
+function AccordionBody() {
+    debugger;
+    return (
             <ul>
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
             </ul>
-        </div>
     );
 }
 
