@@ -2,12 +2,36 @@ import React from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import Rating from './components/Rating/Rating';
+import OnOff from "./components/onOff/onOff";
 
 
 function App() {
     return (
         <div>
-            <PageTitle title={"Hello"}/>
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+           {/* <OnOff on ={false} />
+            <OnOff on ={true} />*/}
+           {/* <PageTitle title={"Hello"}/>
             <PageTitle title={"Yo"}/>
             Article 1
             <Rating value={3}/>
@@ -20,7 +44,7 @@ function App() {
             <Rating value={2}/>
             <Rating value={3}/>
             <Rating value={4}/>
-            <Rating value={5}/>
+            <Rating value={5}/>*/}
         </div>
     );
 }
