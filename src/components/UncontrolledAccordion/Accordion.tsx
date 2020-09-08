@@ -41,3 +41,4 @@ function AccordionBody() {
 export default UncontrolledAccordion;
 export default UncontrolledAccordion;
 export default UncontrolledAccordion;
+export default UncontrolledAccordion;
